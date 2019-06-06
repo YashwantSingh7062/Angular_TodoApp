@@ -1,0 +1,16 @@
+[
+    {
+        "id":0,
+        "title":"Wake up",
+        "time" : "4:30AM",
+        "relatedTo" : "Business",
+        "isCompleted" : true
+    },
+    {
+        "id":1,
+        "title":"Go to GYM",
+        "time" : "8:30AM",
+        "relatedTo" : "Workout",
+        "isCompleted" : false
+    }
+]

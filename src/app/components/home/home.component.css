@@ -1,0 +1,35 @@
+.home-header{
+    box-shadow:2px 2px 2px rgba(0, 0, 0, 0.151);
+    height:50px;
+}
+.home-header ul{
+    list-style:none;
+    display:flex;
+}
+.home-header ul li{
+    height:100%;
+    width:150px;
+    text-align:center;
+    line-height:50px;
+}
+.home-header ul li a {
+    text-decoration:none;
+    display:block;
+    color:black;
+    text-transform:uppercase;
+    font-weight:500;
+}
+.home-header ul li a.link-active{
+    color:#48dbfb;
+}
+.link-active{
+    border-bottom:3px solid #48dbfb;
+}
+
+/*Footer css*/
+.home-footer{
+    box-shadow:-2px -2px 2px rgba(0, 0, 0, 0.151);
+    height:50px;
+    position:absolute;
+    bottom:0;
+}
