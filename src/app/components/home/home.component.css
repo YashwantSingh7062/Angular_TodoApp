@@ -26,10 +26,16 @@
     border-bottom:3px solid #48dbfb;
 }
 
+.home-todo{
+    overflow:scroll;
+    height:60vh;
+}
 /*Footer css*/
 .home-footer{
     box-shadow:-2px -2px 2px rgba(0, 0, 0, 0.151);
     height:50px;
+    padding:10px 20px;
     position:absolute;
     bottom:0;
+    background:white;
 }

@@ -8,26 +8,30 @@ import { DataProviderService } from '../../../data-provider.service';
   styleUrls: ['./add-todo.component.css']
 })
 export class AddTodoComponent implements OnInit {
-  options = ["Business","Routine","Work","Studies","Diet"];
+  options = ["Business","Routine","Work","Studies","Diet","Travel"];
   todoList : Todo[];
   error : string;
+  countTodo : number;
   Todo : Todo = {
-    id : null ,
-    title : null,
-    time : null,
-    relatedTo : "Your todo is related to",
-    isCompleted : false
+    "id" : null ,
+    "title" : null,
+    "time" : null,
+    "relatedTo" : "Your todo is related to",
+    "isCompleted" : false
   };
   constructor( private dataProvider : DataProviderService ) { }
 
   ngOnInit() {
     this.dataProvider.getTodo()
-    .subscribe(data => this.todoList = data,
+    .subscribe(data => {
+                this.todoList = data;
+                this.countTodo = this.todoList.length;
+                },
                 error => this.error = error);
   }
   addTodoToService(){
-    let todo = this.Todo;
-    let todolist = this.todoList;
-    todolist.push(todo);
+    this.Todo.id = this.countTodo;
+    this.todoList.push(this.Todo);
+    this.countTodo++;
   }
 }

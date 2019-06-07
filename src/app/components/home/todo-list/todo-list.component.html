@@ -1,0 +1,13 @@
+<div class='row my-3 py-2'>
+  <div class='col-2 todo-icon'>
+    <i [class]="iconClass"></i>
+  </div>
+  <div class="col-8 todo-title">
+    <h2>{{todo.title}}</h2>
+    <small class='text-muted'>{{todo.time}}</small>
+  </div>
+  <div class="col-2 delete-todo">
+    <button type="button" (click)="deleteTodo()"><i class="fas fa-trash-alt"></i></button>
+  </div>
+</div>
+<hr />

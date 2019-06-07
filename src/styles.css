@@ -4,7 +4,9 @@
     box-sizing:border-box;
     font-family: 'Montserrat', sans-serif;
 }
-
+body{
+    overflow-x:hidden;
+}
 .row{
     padding:0px;
     margin:0px;

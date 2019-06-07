@@ -12,8 +12,8 @@
     outline:none;
     color:white;
     box-shadow:2px 2px 2px rgba(0, 0, 0, 0.4);
-    position:absolute;
-    bottom:-16vw;
+    position:fixed;
+    top:88.5vh;
     left:80%;
     font-size:20px;
     z-index:1;

@@ -8,7 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './components/home/home.component';
-import { TodoListComponent } from './components/home/index/todo-list/todo-list.component';
+import { TodoListComponent } from './components/home/todo-list/todo-list.component';
 
 
 @NgModule({
