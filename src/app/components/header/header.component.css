@@ -26,8 +26,20 @@ header .row{
 .header-por-2 h4,.header-por-2 h6{
     color:white;
 }
-@media ( min-width:500px){
+.header-por-2 h4{
+    font-size:35px;
+}
+.header-por-2 h6{
+    margin-top:42px;
+}
+@media only screen and (max-width: 600px){
+    .header-por-2{
+        padding:0px;
+    }
     .header-por-2 h2,.header-por-2 h3{
         font-size:5px;
+    }
+    .header-por-2 h6{
+        margin:10px;
     }
 }

@@ -1,0 +1,12 @@
+.page-not-found{
+    height:100%;
+    width:100%;
+    background:linear-gradient(aqua,aquamarine);
+    text-align:center;
+}
+.content{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
